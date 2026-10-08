@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f5f7;
+  color: #171717;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6366f1;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input-group input {
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.predict-btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #171717;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.predict-btn:hover {
+  transform: translateY(-1px);
+  background: #2a2a2a;
+}
+
+.result {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f5f5ff;
+  border: 1px solid #e0e0ff;
+}
+
+.result span {
+  font-size: 13px;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.result h2 {
+  font-size: 32px;
+  margin: 6px 0;
+}
+
+.result p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .card {
+    padding: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+}
