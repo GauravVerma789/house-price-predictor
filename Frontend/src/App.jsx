@@ -16,7 +16,7 @@ function App() {
   const [prediction, setPrediction] = useState(null);
 
   const predictPrice = async () => {
-    const response = await axios.post("http://localhost:5022/api/predict", {
+    const response = await axios.post("https://house-price-predictor-1-2s06.onrender.com/api/predict", {
       features: [
         Number(medInc),
         Number(houseAge),
