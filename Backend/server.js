@@ -14,9 +14,9 @@ app.get("/", (req, res) => {
 app.post("/api/predict", async (req, res) => {
   try {
     const response = await axios.post(
-      "http://localhost:8000/predict",
-      req.body
-    );
+  `${process.env.ML_SERVICE_URL}/predict`,
+  req.body
+);
 
     res.json(response.data);
   } catch (error) {
